@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://xs.remoteaccesstool/" xmlns:tns="http://xs.remoteaccesstool/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="IOException" type="tns:IOException"/>
+
+  <xs:element name="getProcessList" type="tns:getProcessList"/>
+
+  <xs:element name="getProcessListResponse" type="tns:getProcessListResponse"/>
+
+  <xs:element name="screenshot" type="tns:screenshot"/>
+
+  <xs:element name="screenshotResponse" type="tns:screenshotResponse"/>
+
+  <xs:element name="systemReboot" type="tns:systemReboot"/>
+
+  <xs:element name="systemRebootResponse" type="tns:systemRebootResponse"/>
+
+  <xs:element name="systemShutDown" type="tns:systemShutDown"/>
+
+  <xs:element name="systemShutDownResponse" type="tns:systemShutDownResponse"/>
+
+  <xs:complexType name="systemReboot">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="systemRebootResponse">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="systemShutDown">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="systemShutDownResponse">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="screenshot">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="screenshotResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:base64Binary" nillable="true" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getProcessList">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getProcessListResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="IOException">
+    <xs:sequence>
+      <xs:element name="message" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
