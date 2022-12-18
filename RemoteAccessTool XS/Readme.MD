@@ -44,7 +44,7 @@ This API was developed with a code-first approach:
 
 1.  Started with developing the server business logic in Java.
 2.  Marked it as a web service using XML/SOAP.
-3.  Generated the WSDL file from the Class RemoteServer and stored it in app/bin/main/
+3.  Generated the WSDL file from the Class RemoteServer and stored it in `app/bin/main/`
 4.  Compiled and deployed the API.
 5.  Developed the asynchronous Node.js client.
 
@@ -54,4 +54,4 @@ How to Run
 1.  Clone this repository
 2.  CD into the root directory and start the server with the command: `java -cp "bin" com.RemoteAccessTool.RemoteAccessToolApplication`
 3.  Once the server has started, it will be hosted on port 8080
-4.  CD into src/consumers/js and run `node index.js` to start the client. Before that, make sure the dependencies are installed by running `npm install` in the directory. The client will attempt to connect to `http://localhost:8080/`. You can change the URL to that of the remote server if it is not executing locally.
+4.  CD into `app/src/consumers/js` and run `node index.js` to start the client. Before that, make sure the dependencies are installed by running `npm install` in the directory. The client will attempt to connect to `http://localhost:8080/`. You can change the URL to that of the remote server if it is not executing locally.
