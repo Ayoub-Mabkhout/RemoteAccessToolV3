@@ -1,4 +1,4 @@
-# RemoteAccessToolV2: Asynchronous Node.js Client
+# RemoteAccessToolV3: Asynchronous Node.js Client
 This is the asynchronous Node.js client for the RemoteAccessToolV2 project, which allows a user to remotely issue commands to a server through the client. The client uses the Fetch API, through the `node-fetch` package, to send HTTP requests to the server and handle the responses. 
 
 ## Functionality
