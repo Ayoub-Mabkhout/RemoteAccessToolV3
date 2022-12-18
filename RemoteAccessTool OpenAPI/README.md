@@ -1,6 +1,6 @@
 # RemoteAccessToolV2: OpenAPI
-OpenAPI Remote Server in Java and Python Client with stub generated through Swagger tools. This is a repository for a programming assignment in my 
-"SC 3374 Advanced & Distributed Programming Paradigms"course as part of the chapter on "Programming for Perfomance".
+OpenAPI Remote Server in Java and an asynchronous NodeJS Client. This is a repository for a programming assignment in my 
+"CSC 3374 Advanced & Distributed Programming Paradigms"course as part of the chapter on "Programming for Perfomance".
 
 
 ## Demonstrated Learning Outcomes
